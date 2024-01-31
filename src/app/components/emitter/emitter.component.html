@@ -1,0 +1,8 @@
+<!-- comunicacao com o componente change-number -->
+
+<div class="class">
+  <h1>Estudando eventos passados com output de filho para pai</h1>
+  <h1>O número é: {{ myNumber }}</h1>
+  <!-- aqui no component pai ele captura o evento changeNumber emitido pelo filho e para chamar uma funcao -->
+  <app-change-number (changeNumber)="onChangeNumber()"></app-change-number>
+</div>

@@ -1,0 +1,13 @@
+<!-- A lista vem do componenent.ts -->
+<div class="class">
+  <h1>Estudando *ngFor para renderizar listas e usando interfaces</h1>
+  <br />
+  <h2>Animais:</h2>
+  <ul>
+    <li *ngFor="let animal of animals">
+      Nome: {{ animal.name }} - Tipo: {{ animal.type }}
+      <button (click)="showAge(animal)">Show age</button>
+    </li>
+  </ul>
+  <h3>{{ animalDetails }}</h3>
+</div>

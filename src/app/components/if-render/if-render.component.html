@@ -1,0 +1,13 @@
+
+<!-- canShow e name estao no arquivo ts do component -->
+<div class="class">
+    <h1>ngif - if-render - usando condicionais</h1>
+    <div *ngIf="canShow">Estamos mostrando isso por que foi permitido</div>
+    
+    <h2 *ngIf="name === 'Matheus'; else nameNotFound">O nome é David</h2>
+    <ng-template #nameNotFound>
+        <div>
+            <h2>O nome não foi encontrado</h2>
+        </div>
+    </ng-template>
+</div>
